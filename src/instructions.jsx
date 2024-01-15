@@ -143,7 +143,7 @@ function Step1() {
         Step 1: Selection
       </Typography>
       <Typography variant="body2" my={3}>
-        On the right you’ll see a partially built to-do app. Let’s start by{" "}
+        On the left you’ll see a partially built to-do app. Let’s start by{" "}
         <strong>clicking</strong> on various parts of it.
       </Typography>
       <Box
