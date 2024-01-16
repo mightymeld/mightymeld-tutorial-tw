@@ -3,6 +3,8 @@ import TASKS from "./tasks.json";
 import { Footer } from "./footer";
 import { Header } from "./header";
 
+const filterNav = ["all", "active", "done"]
+
 export default function App() {
   const [tasks, setTasks] = useState(TASKS);
   const [newTaskName, setNewTaskName] = useState("");
@@ -11,8 +13,8 @@ export default function App() {
   const toggleDone = (id) => {
     setTasks((tasks) =>
       tasks.map((task) =>
-        task.id === id ? { ...task, done: !task.done } : task
-      )
+        task.id === id ? { ...task, done: !task.done } : task,
+      ),
     );
   };
 
@@ -33,17 +35,16 @@ export default function App() {
           <div className="relative w-full bg-white">
             <input
               type="text"
-              id="filled_success"
-              aria-describedby="filled_success_help"
+              id="todo_task"
               value={newTaskName}
               onKeyDown={(e) => e.key === "Enter" && addTask()}
               onChange={(e) => setNewTaskName(e.target.value)}
-              className="block px-2.5 pb-2 pt-4 w-full text-sm text-gray-900 bg-white border-0 border-b border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-b-2 focus:border-[#17a5ea] peer"
+              className="block px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border-0 border-b border-gray-600  appearance-none focus:outline-none focus:ring-0 focus:border-b-2 focus:border-[#17a5ea] peer"
               placeholder=" "
             />
             <label
-              htmlFor="filled_success"
-              className="absolute text-md text-gray-600 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-placeholder-shown:scale-100 peer-focus:text-[#17a5ea] peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto"
+              htmlFor="todo_task"
+              className="absolute text-sm text-slate-600 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               What needs to be done?
             </label>
@@ -56,7 +57,7 @@ export default function App() {
           </button>
         </div>
         <nav className="mt-8 mb-3 rounded inline-flex flex-row justify-between border bg-white divide-x">
-          {["all", "active", "done"].map((item, i) => (
+          {filterNav.map((item, i) => (
             <button
               key={i}
               className={`px-[17px] py-[9px] uppercase text-sm ${

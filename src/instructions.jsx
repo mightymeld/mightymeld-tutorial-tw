@@ -159,11 +159,11 @@ function Step3() {
         src="/edit-mode-select-filter-stack.gif"
       />
       <p className="my-5 text-sm">
-        2. <strong>Change the prop</strong> <code>pt</code> (padding top) from{" "}
-        <code>10</code> to <code>4</code>.
+        2. <strong>Change the class</strong> <code>mt</code> (margin top) from{" "}
+        <code>8</code> to <code>4</code>.
       </p>
       <img className="border max-w-full h-auto"
-        src="/change-pt.gif"
+        src="/change-mt.gif"
       />
     </Instructions>
   );
@@ -265,7 +265,7 @@ function Step7() {
         Step 7: Prefabs
       </h5>
       <p className="my-5 text-sm">
-        1. In edit mode, <strong>open the MUI prefabs </strong> from the library
+        1. In edit mode, <strong>open the Tailwind prefabs </strong> from the library
         panel.
       </p>
       <img className="border"
@@ -273,8 +273,8 @@ function Step7() {
         width="100%"
       />
       <p className="my-5 text-sm">
-        2. <strong>Drag</strong> a <code>&lt;Button&gt;</code> into the{" "}
-        <code>&lt;Stack&gt;</code>.
+        2. <strong>Drag</strong> a <code>&lt;button&gt;</code> into the{" "}
+        <code>&lt;nav&gt;</code>.
       </p>
       <img className="border"
         src="/drag-button.gif"
