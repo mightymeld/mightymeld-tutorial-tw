@@ -3,7 +3,7 @@ import TASKS from "./tasks.json";
 import { Footer } from "./footer";
 import { Header } from "./header";
 
-const filterNav = ["all", "active", "done"]
+const filterNav = ["all", "active", "done"];
 
 export default function App() {
   const [tasks, setTasks] = useState(TASKS);
@@ -39,7 +39,7 @@ export default function App() {
               value={newTaskName}
               onKeyDown={(e) => e.key === "Enter" && addTask()}
               onChange={(e) => setNewTaskName(e.target.value)}
-              className="block px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border-0 border-b border-gray-600  appearance-none focus:outline-none focus:ring-0 focus:border-b-2 focus:border-[#17a5ea] peer"
+              className="block px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border-0 border-b border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-b-1 focus:border-[#17a5ea] peer"
               placeholder=" "
             />
             <label
