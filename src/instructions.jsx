@@ -1,9 +1,6 @@
-import { useEffect } from "react";
 import { Link, useMatches } from "react-router-dom";
 import copy from "copy-to-clipboard";
 import "./style.css"
-
-const WIDTH = 300;
 
 export const steps = [
   Step0,
@@ -20,14 +17,6 @@ export const steps = [
 ];
 
 function Instructions({ children, showNav }) {
-  useEffect(() => {
-    document.body.style.marginLeft = `${WIDTH}px`;
-
-    return () => {
-      document.body.style.marginLeft = "0";
-    };
-  }, []);
-
   const [match] = useMatches();
   const step = match.params?.step ? parseInt(match.params.step, 10) : 0;
 
@@ -46,8 +35,8 @@ function Instructions({ children, showNav }) {
 
   return (
     <>
-      <div data-mm-ignore-tree className="fixed top-0 left-0 w-[300px] ">
-        <div className="bg-[#19163E] text-[#D5D5E3] p-4 pb-0 h-screen border-0 border-r box-border overflow-auto " >
+      <div data-mm-ignore-tree className="max-w-[300px]">
+        <div className="bg-[#19163E] text-[#D5D5E3] p-4 pb-0 h-screen box-border overflow-auto " >
           {children}
         </div>
         {prevPath && (
