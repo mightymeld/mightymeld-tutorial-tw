@@ -66,7 +66,6 @@ Instructions.defaultProps = {
 function Step0() {
   return (
     <Instructions showNav={false}>
-      <div className="max-w-[600px]">
         <h1 className="mt-5 font-medium text-[58px] ">
           Welcome
         </h1>
@@ -78,7 +77,6 @@ function Step0() {
             Begin Tutorial
           </button>
         </Link>
-      </div>
     </Instructions>
   );
 }
