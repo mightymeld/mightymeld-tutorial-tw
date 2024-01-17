@@ -101,7 +101,7 @@ function Step1() {
         Step 1: Selection
       </h5>
       <p className="my-6 text-sm">
-        On the right you’ll see a partially built to-do app. Let’s start by{" "}
+        On the left you’ll see a partially built to-do app. Let’s start by{" "}
         <strong>clicking</strong> on various parts of it.
       </p>
       <img className="border"
