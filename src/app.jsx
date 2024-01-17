@@ -56,18 +56,22 @@ export default function App() {
             Add
           </button>
         </div>
-        <nav className="mt-8 mb-3 rounded inline-flex flex-row justify-between border bg-white divide-x">
-          {filterNav.map((item, i) => (
-            <button
-              key={i}
-              className={`px-[17px] py-[9px] uppercase text-sm ${
-                filter === item ? "background-blue text-[#17a5ea] " : ""
-              }`}
-              onClick={() => setFilter(item)}
-            >
-              {item}
-            </button>
-          ))}
+        <nav className="pt-12 pb-3">
+          <ul className="rounded inline-flex flex-row justify-between border bg-white divide-x">
+            {filterNav.map((item, i) => (
+              <li>
+                <button
+                  key={i}
+                  className={`px-[17px] py-[9px] uppercase text-sm ${
+                    filter === item ? "background-blue text-[#17a5ea] " : ""
+                  }`}
+                  onClick={() => setFilter(item)}
+                >
+                  {item}
+                </button>
+              </li>
+            ))}
+          </ul>
         </nav>
         <ul className="flex flex-col gap-2">
           {tasks.map((task) => {
