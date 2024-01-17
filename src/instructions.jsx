@@ -35,7 +35,7 @@ function Instructions({ children, showNav }) {
 
   return (
     <>
-      <div data-mm-ignore-tree className="max-w-[300px]">
+      <div data-mm-ignore-tree className="max-w-[300px] relative">
         <div className="bg-[#19163E] text-[#D5D5E3] p-4 pb-0 h-screen box-border overflow-auto " >
           {children}
         </div>
