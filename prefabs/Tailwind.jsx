@@ -1,14 +1,6 @@
-export function Button_Outlined() {
+export function Button() {
   return (
-    <button className="h-12 border border-slate-200 px-4 font-semibold tracking-wider text-slate-900 hover:bg-slate-100 text-sm">
-      Click me
-    </button>
-  );
-}
-
-export function Button_Rounded() {
-  return (
-    <button className="h-12 rounded-full bg-slate-900 px-4 font-semibold tracking-wider text-white hover:bg-slate-600 text-sm">
+    <button className="bg-[#17a5ea] hover:bg-[#1182bb] rounded shadow-md py-2 px-4 uppercase text-sm">
       Click me
     </button>
   );

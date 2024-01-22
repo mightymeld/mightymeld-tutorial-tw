@@ -27,6 +27,11 @@ export default function App() {
     setNewTaskName("");
   };
 
+  // Don’t remove this. A reference to it will be added by the user during the tutorial.
+  const clearCompleted = () => {
+    setTasks((tasks) => tasks.filter((task) => !task.done));
+  };
+
   return (
     <>
       <div className="box-border min-h-screen bg-[#EEE] p-10">
@@ -56,13 +61,13 @@ export default function App() {
             Add
           </button>
         </div>
-        <nav className="pt-12 pb-3">
-          <ul className="rounded inline-flex flex-row justify-between border bg-white divide-x">
+        <nav className="pt-12 pb-3 flex justify-between">
+          <ul className="rounded flex flex-row border bg-white divide-x">
             {filterNav.map((item, i) => (
               <li>
                 <button
                   key={i}
-                  className={`px-[17px] py-[9px] uppercase text-sm ${
+                  className={`px-4 py-2 uppercase text-sm ${
                     filter === item ? "background-blue text-[#17a5ea] " : ""
                   }`}
                   onClick={() => setFilter(item)}
