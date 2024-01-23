@@ -138,10 +138,10 @@ function Step3() {
         src="/edit-mode-select-filter-stack.gif"
       />
       <p className="my-5 text-sm">
-        2. <strong>Change the class</strong> <code>mt</code> (margin top) from{" "}
-        <code>8</code> to <code>4</code>.
+        2. <strong>Change the top padding class</strong> from <code>pt-12</code>{" "}
+        to <code>pt-8</code>.
       </p>
-      <img className="border max-w-full h-auto" src="/change-mt.gif" />
+      <img className="border max-w-full h-auto" src="/change-pt.gif" />
     </Instructions>
   );
 }
