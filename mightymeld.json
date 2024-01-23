@@ -4,5 +4,7 @@
   "web_server_url": "http://localhost:4444",
   "prefab_dir": "prefabs",
   "tutorial_path": "/step/0",
+  "default_frame_width": 400,
+  "default_frame_height": 800,
   "run_prettier": true
 }

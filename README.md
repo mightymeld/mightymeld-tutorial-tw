@@ -1,4 +1,4 @@
-# Welcome
+# MightyMeld Tutorial (Tailwind)
 
 Start here to learn how about MightyMeld.
 
