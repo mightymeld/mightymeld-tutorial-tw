@@ -34,33 +34,34 @@ function Instructions({ children, showNav }) {
   }
 
   return (
-    <>
-      <div data-mm-ignore-tree className="max-w-[300px] relative">
-        <div className="bg-[#19163E] text-[#D5D5E3] p-4 pb-0 h-screen box-border overflow-auto ">
-          {children}
-        </div>
-        {prevPath && (
-          <Link to={prevPath}>
-            <button
-              data-mm-tutorial-click
-              className="absolute bottom-5 left-4 text-xs text-white bg-[#582AB9] hover:bg-[#452191] py-2.5 px-5 font-medium"
-            >
-              ← Previous
-            </button>
-          </Link>
-        )}
-        {nextPath && (
-          <Link to={nextPath}>
-            <button
-              data-mm-tutorial-click
-              className="absolute bottom-5 right-4 text-xs text-white bg-[#582AB9] hover:bg-[#452191] py-2.5 px-5 font-medium"
-            >
-              Next →
-            </button>
-          </Link>
-        )}
+    <div
+      data-mm-ignore-tree
+      className="max-w-[300px] relative text-sm leading-6"
+    >
+      <div className="bg-[#19163E] text-[#D5D5E3] p-4 pb-0 h-screen box-border overflow-auto">
+        {children}
       </div>
-    </>
+      {prevPath && (
+        <Link to={prevPath}>
+          <button
+            data-mm-tutorial-click
+            className="absolute bottom-5 left-4 text-xs text-white bg-[#582AB9] hover:bg-[#452191] py-2.5 px-5 font-medium"
+          >
+            ← Previous
+          </button>
+        </Link>
+      )}
+      {nextPath && (
+        <Link to={nextPath}>
+          <button
+            data-mm-tutorial-click
+            className="absolute bottom-5 right-4 text-xs text-white bg-[#582AB9] hover:bg-[#452191] py-2.5 px-5 font-medium"
+          >
+            Next →
+          </button>
+        </Link>
+      )}
+    </div>
   );
 }
 
@@ -91,12 +92,12 @@ function Step1() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 1: Selection</h5>
-      <p className="my-6 text-sm">
+      <p className="my-6">
         On the left you’ll see a partially built to-do app. Let’s start by{" "}
         <strong>clicking</strong> on various parts of it.
       </p>
       <img className="border" src="/selecting-things.gif" width="100%" />
-      <p className="my-6 text-sm">
+      <p className="my-6">
         Notice how the left and right panels change in response to what you
         select.
       </p>
@@ -108,12 +109,12 @@ function Step2() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 2: Drive mode</h5>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         1. Switch to <strong>Drive</strong> mode in order to interact with the
         to-do app.
       </p>
       <img className="border" src="/drive-mode.gif" width="100%" />
-      <p className="my-5 text-sm">
+      <p className="my-5">
         2. <strong>Add</strong> a new to-do called “Buy groceries.”
       </p>
       <img className="border" src="/add-task.gif" width="100%" />
@@ -125,11 +126,11 @@ function Step3() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 3: Style Changes</h5>
-      <p className="mt-5 text-sm">
+      <p className="mt-5">
         The spacing above the filter buttons is a little too large. Let’s make
         that smaller.
       </p>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         1. <strong>Switch to edit mode</strong> and <strong>select</strong> the{" "}
         <code>&lt;nav&gt;</code> surrounding the filter.
       </p>
@@ -137,7 +138,7 @@ function Step3() {
         className="border max-w-full h-auto mb-2"
         src="/edit-mode-select-filter-stack.gif"
       />
-      <p className="my-5 text-sm">
+      <p className="my-5">
         2. <strong>Change the top padding class</strong> from <code>pt-12</code>{" "}
         to <code>pt-8</code>.
       </p>
@@ -152,10 +153,10 @@ function Step4() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 4: Editing Code</h5>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         You may have noticed the filter doesn’t do anything. Let’s fix that!
       </p>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         1. <strong>Copy</strong> this code.
       </p>
       <div className="relative">
@@ -173,16 +174,16 @@ function Step4() {
           Copy
         </button>
       </div>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         2. <strong>Right-click</strong> one of the list items and choose{" "}
         <strong>Open in Editor</strong>.
       </p>
       <img className="border h-auto max-w-full" src="/editor-paste.gif" />
-      <p className="my-5 text-sm">
+      <p className="my-5">
         3. <strong>Paste</strong> the code before the line with{" "}
         <code>const labelId</code>, and <strong>save the file</strong>.
       </p>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         4. <strong>Switch to Drive mode</strong> and test the filters. They
         should now work!
       </p>
@@ -194,8 +195,8 @@ function Step5() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 5: Git Diff</h5>
-      <p className="my-5 text-sm">Let’s see what changes we’ve made so far.</p>
-      <p className="my-5 text-sm">
+      <p className="my-5">Let’s see what changes we’ve made so far.</p>
+      <p className="my-5">
         <strong>Your task:</strong> Click on the diff icon in the toolbar.
       </p>
       <img className="border" src="/diff.png" width="212px" height="48px" />
@@ -207,16 +208,16 @@ function Step6() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 6: Active Component</h5>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         MightyMeld shows one active component at a time. Right now that should
         be <code>&lt;App&gt;</code>.
       </p>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         1. In edit mode, <strong>double-click</strong>{" "}
         <code>&lt;Header&gt;</code> to make it active.
       </p>
       <img className="border" src="/component-down.gif" width="100%" />
-      <p className="my-5 text-sm">
+      <p className="my-5">
         2. <strong>Click the arrow</strong> to go back up to{" "}
         <code>&lt;App&gt;</code>.
       </p>
@@ -229,12 +230,12 @@ function Step7() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 7: Prefabs</h5>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         1. In edit mode, <strong>open the Tailwind prefabs </strong> from the
         library panel.
       </p>
       <img className="border" src="/show-prefabs.gif" width="100%" />
-      <p className="my-5 text-sm">
+      <p className="my-5">
         2. <strong>Drag</strong> a <code>&lt;button&gt;</code> into the{" "}
         <code>&lt;nav&gt;</code>.
       </p>
@@ -247,11 +248,11 @@ function Step8() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 8: Text</h5>
-      <p className="mb-5 text-sm">
+      <p className="mb-5">
         1. <strong>Select</strong> the button’s text node.
       </p>
       <img className="border" src="/select-text-node.gif" width="100%" />
-      <p className="my-5 text-sm">
+      <p className="my-5">
         2. <strong>Rename</strong> the label to “Clear”.
       </p>
       <img className="border" src="/edit-text-node.gif" width="100%" />
@@ -263,18 +264,18 @@ function Step9() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 9: Adding props</h5>
-      <p className="mb-5 text-sm">
+      <p className="my-5">
         Let’s give some functionality to the “Clear” button.
       </p>
-      <p className="mb-5 text-sm">
+      <p className="my-5">
         1. <strong>Select</strong> the button.
       </p>
-      <p className="mb-5 text-sm">
+      <p className="my-5">
         2. <strong>Add a new prop</strong> named <code>onClick</code> with the
         value <code>clearCompleted</code>.
       </p>
       <img className="border" src="/onclick-handler.gif" width="100%" />
-      <p className="mb-5 text-sm">
+      <p className="my-5">
         3. In Drive mode, <strong>click the Clear button</strong>.
       </p>
     </Instructions>
@@ -285,11 +286,11 @@ function Step10() {
   return (
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">You did it!</h5>
-      <p className="mb-5 text-sm">
+      <p className="mb-5">
         Congrats on completing this fully functional to-do app! Here’s some
         ideas on what to try next:
       </p>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         <a
           data-mm-tutorial-click
           href="https://docs.mightymeld.com/docs/setup/getting-started/quick-start"
@@ -299,7 +300,7 @@ function Step10() {
           Set up your own project →
         </a>
       </p>
-      <p className="my-5 text-sm">
+      <p className="my-5">
         <a
           data-mm-tutorial-click
           href="https://github.com/mightymeld/awesome-mightymeld#-sample-projects"
