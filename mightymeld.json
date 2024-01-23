@@ -6,5 +6,7 @@
   "tutorial_path": "/step/0",
   "default_frame_width": 400,
   "default_frame_height": 800,
-  "run_prettier": true
+  "run_prettier": true,
+  "language_servers": ["tailwindcss"],
+  "tailwind": true
 }
