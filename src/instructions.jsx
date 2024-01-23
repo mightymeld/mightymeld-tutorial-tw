@@ -139,7 +139,7 @@ function Step3() {
         src="/edit-mode-select-filter-stack.gif"
       />
       <p className="my-5">
-        2. <strong>Change the top padding class</strong> from <code>pt-12</code>{" "}
+        2. <strong>Change the top padding class</strong> from <code>pt-20</code>{" "}
         to <code>pt-8</code>.
       </p>
       <img className="border max-w-full h-auto" src="/change-pt.gif" />

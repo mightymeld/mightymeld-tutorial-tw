@@ -61,7 +61,7 @@ export default function App() {
             Add
           </button>
         </div>
-        <nav className="pt-12 pb-3 flex justify-between">
+        <nav className="pt-20 pb-3 flex justify-between">
           <ul className="rounded flex flex-row border bg-white divide-x">
             {filterNav.map((item, i) => (
               <li>
