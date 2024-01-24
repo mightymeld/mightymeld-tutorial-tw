@@ -6,7 +6,7 @@ Start here to learn how about MightyMeld.
 
 1. Run `npm install` to install dependencies.
 
-2. Download a mightymeld.secrets file from the [MightyMeld Portal](https://mightymeld.app/instances) and place it in your project root
+2. Run `npx mightymeld secrets` to download a `mightymeld.secrets` file.
 
 3. Run `npx mightymeld` to launch MightyMeld studio in a browser tab.
 
