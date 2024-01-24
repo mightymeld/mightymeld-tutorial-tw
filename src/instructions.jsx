@@ -278,6 +278,7 @@ function Step9() {
       <p className="my-5">
         3. In Drive mode, <strong>click the Clear button</strong>.
       </p>
+      <img className="border" src="/clear.gif" width="100%" />
     </Instructions>
   );
 }
