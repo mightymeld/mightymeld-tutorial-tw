@@ -236,7 +236,7 @@ function Step7() {
       </p>
       <img className="border" src="/show-prefabs.gif" width="100%" />
       <p className="my-5">
-        2. <strong>Drag</strong> a <code>&lt;button&gt;</code> into the{" "}
+        2. <strong>Drag</strong> a <code>Button</code> into the{" "}
         <code>&lt;nav&gt;</code>.
       </p>
       <img className="border" src="/drag-button.gif" width="100%" />
