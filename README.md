@@ -14,4 +14,4 @@ Start here to learn how about MightyMeld.
 
 1. Type `npm install` to install dependencies.
 
-2. Run `npm run dev`, the app should then appear in a browser tab on [localhost:5173](localhost:5173)
+2. Run `npm run dev`, the app should then appear in a browser tab on [localhost:4444](localhost:4444)
