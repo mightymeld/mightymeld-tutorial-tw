@@ -93,7 +93,7 @@ function Step1() {
     <Instructions>
       <h5 className="mb-5 font-medium text-xl ">Step 1: Selection</h5>
       <p className="my-6">
-        On the left you’ll see a partially built to-do app. Let’s start by{" "}
+        On the right you’ll see a partially built to-do app. Let’s start by{" "}
         <strong>clicking</strong> on various parts of it.
       </p>
       <img className="border" src="/selecting-things.gif" width="100%" />
